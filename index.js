@@ -27,7 +27,6 @@ const getPage = () => {
     headers: browserHeaders,
   }
   return axios.get(url, options).then((res) => res.data)
-  // console.log('*** getPage:', url)
 }
 
 getPage().then(console.log).catch(console.error)
